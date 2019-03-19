@@ -1,0 +1,9 @@
+ 
+<svg class="guageSvg" width="150" height="220">
+  <path d="M 50 200 A 50 50 0 1 1 100 200" fill="none" stroke="#dcdcdc" stroke-width="8"></path>
+  <path class="fillingPath" d="M 50 200 A 50 50 0 1 1 100 200" fill="none" [ngStyle]="{'stroke-dashoffset.px': perCal(guagePerCentage)}" stroke="#3CB371" stroke-width="10"></path>
+  <text x="50%" y="65%" dominant-baseline="middle" fill="green" font-size="24" text-anchor="middle">{{guagePerCentage}}% </text> 
+  <text x="50%" y="76%" dominant-baseline="middle" fill="#666" font-size="16" text-anchor="middle">Progress </text> 
+</svg>
+<div class="inputWrap">Input Percentage: <input type="number" class="inputfield" [(ngModel)]="guagePerCentage" min="0" max="100">%</div>
+<div class="text-danger" *ngIf="showAlert"> Value must be between 0 to 100!</div>

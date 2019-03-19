@@ -1,0 +1,15 @@
+.guageSvg{
+    margin-top: -90px;
+    .fillingPath{
+        stroke-dasharray: 262;
+        transition: stroke-dashoffset 2s;
+        stroke-dashoffset: 0;
+    }
+}
+.text-danger{color:red;font-size: 14px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
+
+input.inputfield {
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    border-radius: 2px;
+}
